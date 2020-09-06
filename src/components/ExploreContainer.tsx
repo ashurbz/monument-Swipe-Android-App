@@ -6,8 +6,28 @@ interface ContainerProps { }
 const ExploreContainer: React.FC<ContainerProps> = () => {
   return (
     <div className="container">
-      <strong>Ready to create an app?</strong>
-      <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      <p>
+      <strong>Swipe Right If you know</strong>
+      <br/>
+        
+        </p>
+
+        <p>
+
+        <strong>Swipe left If you Dont</strong>
+        <br/>
+
+        </p>
+
+        <p>
+
+        <strong>Tap to know About</strong>
+        <br/>
+
+</p>
+
+
+     
     </div>
   );
 };

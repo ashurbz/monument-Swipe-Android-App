@@ -1,0 +1,11 @@
+.centre{
+   margin: auto;
+   background-color: aqua;
+}
+IonButton{
+    color:"red"
+}
+
+#background-content{
+    background-color: transparent;
+}
