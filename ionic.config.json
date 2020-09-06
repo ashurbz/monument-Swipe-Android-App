@@ -1,0 +1,7 @@
+{
+  "name": "monument-Swipe",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
