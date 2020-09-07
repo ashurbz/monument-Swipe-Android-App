@@ -31,11 +31,13 @@ import '@ionic/react/css/display.css';
 
 
 const App: React.FC = () => (
+
+  // stylng of landing page
  
   <IonApp style={{backgroundColor:"lightgreen"}} >
       <div style={{textAlign:"center",margin:"auto"}}>
 
-     
+     {/* icon for landing page */}
     <IonIcon style={{transform:"scale(5)"}} icon={logoAndroid} size="large"  ></IonIcon>
     <IonReactRouter>
       <IonRouterOutlet>
@@ -43,7 +45,7 @@ const App: React.FC = () => (
       
         
 
-      
+      {/* route setup */}
        
         <Link to="/ashu" style={{color:"white",textDecoration:"none",textAlign:"center"}}> <IonButton expand="full" >Play</IonButton></Link>
        

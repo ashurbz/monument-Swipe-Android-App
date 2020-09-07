@@ -22,7 +22,7 @@ var Swipeable =  require("react-swipy")
 
 let style={};
 
-
+// score and attempts handling
 
 let Score=0;
 let attempts=0;
@@ -32,12 +32,13 @@ const App: React.FC = () => {
 
   function addCards () {
     let updateCard = cards;
+    // random cards will be updated in deck
     let random = data[Math.floor(Math.random() * data.length)];
     updateCard.push(random);
     setCards(updateCard)
     console.log(cards)
   }
-  
+  // after swipe score will be added handled
   function AfterSwipe () {
     if(attempts>10){
      if(Score>50)
@@ -62,7 +63,7 @@ const App: React.FC = () => {
     addCards()
     setCards(cards.slice(1, cards.length));
   }
-  
+  // maximum 10 attempts will be made 
   function Swipe(dir:any){
     style={}
     attempts=attempts+1;
@@ -78,6 +79,7 @@ const App: React.FC = () => {
       }
   }
 
+  // if replaying then all things will be reset
   function  replay() {
       setCards(data);
       attempts=0;
@@ -85,7 +87,7 @@ const App: React.FC = () => {
       console.log("dsad")
   }
   
-  
+  //  function for fliping of slides cards
   function abc(){
     
    style={
@@ -143,8 +145,10 @@ const App: React.FC = () => {
 
            
           </IonContent>
+          {/* component for rules of game */}
        
           <Com />
+          {/*  button if u want to replay */}
           <IonButton onClick={replay} expand="full">
               
               
