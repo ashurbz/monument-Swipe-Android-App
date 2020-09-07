@@ -20,7 +20,7 @@ import Com  from "../components/ExploreContainer"
 
 var Swipeable =  require("react-swipy")
 
-
+let style={};
 
 
 
@@ -83,8 +83,20 @@ const App: React.FC = () => {
       console.log("dsad")
   }
   
+  
   function abc(){
-    console.log(IonCard)
+   
+   style={
+    animation:"flipInX",
+    animationDuration:"2s" 
+   };
+   
+    setCards(cards);
+    console.log("re") 
+    
+    
+
+    
   }
 
   return (
@@ -104,7 +116,7 @@ const App: React.FC = () => {
             
                 onAfterSwipe={AfterSwipe}
               >
-                <IonCard key={cards[0].name} onClick={abc} className=".md body" >
+                <IonCard key={cards[0].name} style={style} onClick={abc}  >
                   <IonCardContent>
                     <img src={cards[0].img} alt={cards[0].name}/>
                     <IonLabel><b>{cards[0].name}</b></IonLabel>

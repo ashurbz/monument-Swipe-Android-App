@@ -9,3 +9,8 @@ IonButton{
 #background-content{
     background-color: transparent;
 }
+
+
+.abc{
+    display: none;
+}
