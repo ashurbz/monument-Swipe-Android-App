@@ -44,7 +44,8 @@ const App: React.FC = () => (
         
 
       
-        <IonButton expand="full" >  <Link to="/ashu" style={{color:"white",textDecoration:"none",textAlign:"center"}}>Play</Link></IonButton>
+       
+        <Link to="/ashu" style={{color:"white",textDecoration:"none",textAlign:"center"}}> <IonButton expand="full" >Play</IonButton></Link>
        
        
         <Route  path="/ashu" component={app} exact={true} />

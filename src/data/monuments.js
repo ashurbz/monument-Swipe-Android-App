@@ -1,51 +1,54 @@
 let monuments=[
     {
         name: 'Ram Mandir',
-        img: "https://images.assettype.com/swarajya%2F2020-08%2Fdd9a6d92-b9a3-41c8-89d8-9d42ee05605a%2F1.jpg?w=640&q=75&auto=format%2Ccompress",
+        img: "assets/images/swarajya_2020-08_dd9a6d92-b9a3-41c8-89d8-9d42ee05605a_1.webp",
+        info:"Ram Mandir (राम मंदिर,Ram Temple) is a Hindu temple that is being built at the sacred pilgrimage site of Ram Janmabhoomi in Ayodhya, Uttar Pradesh, India"
       },
       {
         name: 'Taj Mahal',
-        img: "https://thumbs-prod.si-cdn.com/rtkp3HcECC3xlPiOGvSnR1M5Rag=/fit-in/1600x0/filters:focal(1471x1061:1472x1062)/https://public-media.si-cdn.com/filer/b6/30/b630b48b-7344-4661-9264-186b70531bdc/istock-478831658.jpg",
+        img: "assets/images/istock-478831658.jpg",
+        info:"The Taj Mahal 'Crown of the Palace', is an ivory-white marble mausoleum on the southern bank of the river Yamuna in the Indian city of Agra"
+        
       },
       {
         name: 'India Gate',
-        img: "https://upload.wikimedia.org/wikipedia/commons/0/09/India_Gate_in_New_Delhi_03-2016.jpg",
-        
+        img: "assets/images/India_Gate_in_New_Delhi_03-2016.jpg",
+        info:"The India Gate (originally the All India War Memorial) is a war memorial located astride the Rajpath, on the eastern edge of the ceremonial axis of New Delhi"
       },
       {
         name: 'Golden temple',
-        img: "https://upload.wikimedia.org/wikipedia/commons/6/63/Golden_Temple_nighttime.jpg",
-        
+        img: "assets/images/Golden_Temple_nighttime.jpg",
+        info:"The Golden Temple, also known as Harmandir Sahib, meaning abode of God is a Gurdwara located in the city of Amritsar, Punjab, India"
       },
       {
         name: 'Char Minar',
-        img: "https://img.theculturetrip.com/768x432/wp-content/uploads/2016/06/24498998325_f451c67aae_o.jpg",
-        
+        img: "assets/images/24498998325_f451c67aae_o.jpg",
+        info:"The Charminar,constructed in 1591, is a monument and mosque located in Hyderabad, Telangana, India"
       },
       {
         name: 'Gateway Of India',
-        img: "https://mediaindia.eu/wp-content/uploads/2020/01/sarang-pande-k3SHcT9zGkE-unsplash.jpg",
-        
+        img: "assets/images/sarang-pande-k3SHcT9zGkE-unsplash.jpg",
+        info:"The Gateway of India is an arch-monument built in the early twentieth century in the city of Mumbai, in the Indian state of Maharashtra"
       },
       {
         name: 'Sanchi Stupa',
-        img: "https://cdn.britannica.com/36/155836-050-C39E821F/Great-Stupa-Sanchi-India.jpg",
-        
+        img: "assets/images//Great-Stupa-Sanchi-India.jpg",
+        info:"Sanchi Stupa is a Buddhist complex, famous for its Great Stupa, on a hilltop at Sanchi Town in Raisen District of the State of Madhya Pradesh, India"
       },
       {
-        name: 'Qutub Minar',
-        img: "https://6oclocktrain.com/wp-content/uploads/2019/06/qutub-minar-2155776_1280-1024x673.jpg",
-        
+        name: 'Qutb Minar',
+        img: "assets/images/qutub-minar-2155776_1280-1024x673.jpg",
+        info:"The Qutb Minar, also spelled as Qutub Minar and Qutab Minar, is a minaret and victory tower that forms part of the Qutb complex, a UNESCO World Heritage Site in the Mehrauli area of New Delhi, India"
       },
       {
         name: 'Red Fort',
-        img: "https://www.holidify.com/images/cmsuploads/compressed/Delhi_Red_fort_20190312151147.jpg",
-        
+        img: "assets/images/Delhi_Red_fort_20190312151147.jpg",
+        info:"The Red Fort is a historic fort in the city of Delhi (in Old Delhi) in India that served as the main residence of the Emperors"
       },
       {
         name: 'Hawa Mahal',
-        img: "https://s3.india.com/travel/wp-content/uploads/2015/06/hawa-1.jpg",
-        
+        img: "assets/images/hawa-1.jpg",
+        info:"Hawa Mahal The Palace of Winds or The Palace of Breeze is a palace in Jaipur, India approximately 300 kilometers from the capital city of Delhi"
       },
 
 

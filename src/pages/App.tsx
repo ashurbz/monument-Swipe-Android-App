@@ -43,14 +43,15 @@ const App: React.FC = () => {
      if(Score>50)
      setCards([{
        name:`Congo!!!!!!! Your Score is ${Score}`,
-       img:"https://dx5683gi1tv0w.cloudfront.net/dtrjyhj9q/image/upload/w_1080,h_1080,c_pad,b_auto/s3/img0be16e8d8"
+       img:"https://dx5683gi1tv0w.cloudfront.net/dtrjyhj9q/image/upload/w_1080,h_1080,c_pad,b_auto/s3/img0be16e8d8",
+       info:"score"
      }])
 
      else{
       setCards([{
         name:`Better Luck Next Time!!! Your Score is ${Score}`,
         img:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f3e3ea4c-8a14-4941-943b-080da283982c/d3kqnvk-ef2d4985-1f31-4420-846f-6267a411299e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZjNlM2VhNGMtOGExNC00OTQxLTk0M2ItMDgwZGEyODM5ODJjXC9kM2txbnZrLWVmMmQ0OTg1LTFmMzEtNDQyMC04NDZmLTYyNjdhNDExMjk5ZS5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.EJXDOJFDZEgC8fH4PnkVY88aTCMN2A5ERTMsW2j3t9I"
-      }])
+    ,info:"score"  }])
 
      }
 
@@ -63,6 +64,7 @@ const App: React.FC = () => {
   }
   
   function Swipe(dir:any){
+    style={}
     attempts=attempts+1;
       if(dir==="left"&&attempts<10)
                       {
@@ -85,14 +87,23 @@ const App: React.FC = () => {
   
   
   function abc(){
-   
+    
    style={
     animation:"flipInX",
     animationDuration:"2s" 
    };
+   if(cards[0].info!="")
+   setCards([{
+     img:"assets/images/download.png",
+     info:"",
+     name:cards[0].info
+
+   }]);
    
-    setCards(cards);
+
     console.log("re") 
+    
+    
     
     
 
@@ -101,7 +112,8 @@ const App: React.FC = () => {
 
   return (
     <div id='app'>
-        <IonApp>
+      
+        <IonApp style={{backgroundColor:"white"}}>
           <IonContent  >
             <IonHeader>
               <IonToolbar  style={{ textAlign:"center"}} >
@@ -115,10 +127,14 @@ const App: React.FC = () => {
               <Swipeable onSwipe={Swipe}
             
                 onAfterSwipe={AfterSwipe}
+                
               >
-                <IonCard key={cards[0].name} style={style} onClick={abc}  >
+                <IonCard key={cards[0].name} style={style}  onClick={abc}  >
                   <IonCardContent>
-                    <img src={cards[0].img} alt={cards[0].name}/>
+
+
+                    <img src={cards[0].img} alt={cards[0].info} />
+                  
                     <IonLabel><b>{cards[0].name}</b></IonLabel>
                   </IonCardContent>
                 </IonCard>
