@@ -32,7 +32,7 @@ let monuments=[
       },
       {
         name: 'Sanchi Stupa',
-        img: "assets/images//Great-Stupa-Sanchi-India.jpg",
+        img: "assets/images/Great-Stupa-Sanchi-India.jpg",
         info:"Sanchi Stupa is a Buddhist complex, famous for its Great Stupa, on a hilltop at Sanchi Town in Raisen District of the State of Madhya Pradesh, India"
       },
       {

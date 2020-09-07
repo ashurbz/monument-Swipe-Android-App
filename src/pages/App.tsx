@@ -45,14 +45,14 @@ const App: React.FC = () => {
      setCards([{
        name:`Congo!!!!!!! Your Score is ${Score}`,
        img:"https://dx5683gi1tv0w.cloudfront.net/dtrjyhj9q/image/upload/w_1080,h_1080,c_pad,b_auto/s3/img0be16e8d8",
-       info:"score"
+       info:`Congo!!!!!!! Your Score is ${Score}`
      }])
 
      else{
       setCards([{
         name:`Better Luck Next Time!!! Your Score is ${Score}`,
         img:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f3e3ea4c-8a14-4941-943b-080da283982c/d3kqnvk-ef2d4985-1f31-4420-846f-6267a411299e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZjNlM2VhNGMtOGExNC00OTQxLTk0M2ItMDgwZGEyODM5ODJjXC9kM2txbnZrLWVmMmQ0OTg1LTFmMzEtNDQyMC04NDZmLTYyNjdhNDExMjk5ZS5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.EJXDOJFDZEgC8fH4PnkVY88aTCMN2A5ERTMsW2j3t9I"
-    ,info:"score"  }])
+    ,info:`Better Luck Next Time!!! Your Score is ${Score}`  }])
 
      }
 
